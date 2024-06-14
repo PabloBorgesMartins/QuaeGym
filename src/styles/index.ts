@@ -8,7 +8,7 @@ export const {
 	keyframes,
 	getCssText,
 	theme,
-	createTheme
+	createTheme,
 } = createStitches({
 	theme: {
 		colors: {
@@ -17,6 +17,7 @@ export const {
 			currentColor: 'currentColor',
 			white: '#ffffff',
 			black: '#0e1116',
+
 			black950: '#000000',
 			black900: '#0e1116',
 			black800: '#42464d',
@@ -26,12 +27,21 @@ export const {
 			black500: '#dee0e4',
 			black400: '#f2f3f4',
 			black300: '#fafafb',
+
 			error: '#D5041A',
 			error500: '#D5041A',
 			error100: '#ffe5e6',
+
 			success: '#008531',
 			success500: '#008531',
-			success100: '#e5fff1'
+			success100: '#e5fff1',
+
+			primary: '#abd2fa',
+			primary1: '#64E9EE',
+			primary2: '#3D518C',
+			primary3: '#7692FF',
+			primary4: '#1B2CC1',
+			primary5: '#091540',
 		},
 		spacing: {
 			0: '0rem',
@@ -72,25 +82,40 @@ export const {
 			desktop: '1024px',
 			desktopLarge: '1440px'
 		},
-		// keyframes: {
-		// 	slideRight: {
-		// 		'0%': {
-		// 			transform: 'translate(0px, var(--tw-translate-y))',
-		// 			opacity: '1'
-		// 		},
-		// 		'33%': {
-		// 			transform: 'translate(10%, var(--tw-translate-y))',
-		// 			opacity: '0'
-		// 		},
-		// 		'66%': {
-		// 			transform: 'translate(-10%, var(--tw-translate-y))',
-		// 			opacity: '0'
-		// 		},
-		// 		'100%': {
-		// 			transform: 'translate(0px, var(--tw-translate-y))',
-		// 			opacity: '1'
-		// 		}
-		// 	}
-		// }
 	}
 })
+
+export const darkTheme = createTheme({
+	colors: {
+		inherit: 'inherit',
+		transparent: 'transparent',
+		currentColor: 'currentColor',
+		white: '#ffffff',
+		black: '#0e1116',
+
+		black950: '#000000',
+		black900: '#0e1116',
+		black800: '#42464d',
+		black700: '#565c69',
+		black600: '#7f858d',
+		black550: '#b6bbc2',
+		black500: '#dee0e4',
+		black400: '#f2f3f4',
+		black300: '#fafafb',
+
+		error: '#D5041A',
+		error500: '#D5041A',
+		error100: '#ffe5e6',
+
+		success: '#008531',
+		success500: '#008531',
+		success100: '#e5fff1',
+
+		primary: '#D5041A',
+		primary1: '#D5041A',
+		primary2: '#D5041A',
+		primary3: '#D5041A',
+		primary4: '#D5041A',
+		primary5: '#D5041A',
+	}
+});

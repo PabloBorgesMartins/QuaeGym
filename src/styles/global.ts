@@ -1,14 +1,14 @@
 import { globalCss } from ".";
 
 export const globalStyles = globalCss({
-    '*': {
-        margin: 0,
-        padding: 0,
-        fontFamily: 'Roboto',
-        fontWeight: 400
-    },
+  '*': {
+    margin: 0,
+    padding: 0,
+    fontFamily: 'Roboto',
+  },
 
-    body: {
-        '-webkit-font-smoothing': 'antialiased'
-    },
+  body: {
+    backgroundColor: "$primary",
+    '-webkit-font-smoothing': 'antialiased'
+  },
 })
